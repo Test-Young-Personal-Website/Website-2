@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+
+    .container2 .box2:nth-child(1) {
+      z-index: 9;
+      background-color: aqua;
+    }
+    
+    .container2 .box2:nth-child(2) {
+      z-index: 8;
+      background-color: turquoise;
+    }
+    
+    .container2 .box2:nth-child(3) {
+      z-index: 7;
+      background-color: orange;
+    }
+    
+    .container2 .box2:nth-child(4) {
+      z-index: 6;
+      background-color: lightgreen;
+    }
+    
+    .container2 .box2:nth-child(5) {
+      z-index: 5;
+      background-color: blue;
+    }
+    
+    .container2 .box2:nth-child(6) {
+      z-index: 4;
+      background-color: indigo;
+    }
+    
+    .container2 .box2:nth-child(7) {
+      z-index: 3;
+      background-color: violet;
+    }
+    
+    .container2 .box2:nth-child(8) {
+      z-index: 2;
+      background-color: purple;
+    }
+    
+    .container2 .box2:nth-child(9) {
+      z-index: 1;
+      background-color: pink;
+    }
+
+    .star {
+      position: relative;
+      width: 0;
+      height: 0;
+      border-left: 55px solid transparent;
+      border-right: 55px solid transparent;
+      border-bottom: 40px solid yellow;
+    }
+
+    .star::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -25px;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 40px solid yellow;
+      transform: rotate(35deg);
+    }
+
+    .star::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: 40px solid yellow;
+      transform: rotate(-35deg);
+    }
+.glow {
+      animation: glowing 2s ease-in-out infinite;
+    }
+
+    @keyframes glowing {
+      0% {
+        box-shadow: 0 0 5px yellow;
+      }
+      50% {
+        box-shadow: 0 0 20px 5px yellow;
+      }
+      100% {
+        box-shadow: 0 0 5px yellow;
+      }
+    }
+    .container2 {
+      display: flex;
+      z-index: 1;
+    }
+    
+    .box2 {
+      flex: 1;
+      height: 75px;
+      margin: 1px;
+    }
+    
+</style>
+</head>
+<body>
+
+  <div class="container2">
+    <div class="box2">  <div class="star glow"></div></div>
+    <div class="box2"> <div class="star glow"></div></div>
+    <div class="box2"> <div class="star glow"></div></div>
+    <div class="box2"> <div class="star glow"></div></div>
+    <div class="box2"> <div class="star glow"></div></div>
+    <div class="box2"> <div class="star glow"></div></div>
+    <div class="box2"> <div class="star glow"></div></div>
+    <div class="box2"> <div class="star glow"></div></div>
+    <div class="box2"> <div class="star glow"></div></div>
+  </div>
+
+
+    <h2>Hello there and thanks for checking this out, please hire me!</h2>
+    <p>Email:myemail@gmail.com</p>
+    <p>Cell phone: 904-999-9999</p>
+
+    <div class="header">
+        <h1> <div class="content">
+          <div class="button-container">
+            <a href="about.html">About</a>
+            <a href="Index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a></h1>
+      </div>
+</body>
+</html>
